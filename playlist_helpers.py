@@ -50,7 +50,7 @@ def play_track (playlist, track = 1):
         print(f'Now playing Track {track}: {song["title"]} by {song["artist"]}')
         song["plays"] += 1
     except IndexError:
-        print(f'Please enter a valid selection')  
+        
 
 
     
