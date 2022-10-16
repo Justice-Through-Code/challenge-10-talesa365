@@ -8,9 +8,7 @@ def display_playlist(playlist):
         print('Playlist is empty!')
     else:
         for i in range(len(playlist)):
-            print(
-                f'Track {i + 1}: {playlist[i]["plays"]} plays\n\t- {playlist[i]["title"]} by {playlist[i]["artist"]}'
-            )
+            print(f'Track {i + 1}: {playlist[i]["plays"]} plays\n\t- {playlist[i]["title"]} by {playlist[i]["artist"]}')
 
 
 def add_song(playlist, song):
@@ -50,6 +48,7 @@ def play_track (playlist, track = 1):
         print(f'Now playing Track {track}: {song["title"]} by {song["artist"]}')
         song["plays"] += 1
     except IndexError:
+        return
         
 
 

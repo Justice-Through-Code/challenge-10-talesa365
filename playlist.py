@@ -59,8 +59,8 @@ print(get_playlist_length(my_playlist))
 # 8.0 TODO: using the mean() function from numpy, calculate and print the average of monthly_plays
 # You don't have to write any functions for this question
 monthly_plays = [127030, 274920, 232453, 98278, 500301, 235462]
-print(np.mean(monthly_plays))
-
+average = round(np.mean(monthly_plays))
+print(average)
 # 9.0 TODO: In playlist_helpers.py, define a new function called play_track()
 # See playlist_helpers.py for details on how to define this function
 # In this file, play a few tracks, and run display_playlist() again to make sure it works
